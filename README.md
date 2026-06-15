@@ -1,6 +1,6 @@
-# ⚡ InnovaGrid - Soluciones en Domótica y Mantenimiento Eléctrico
+# ⚡ Angelotti_Service - Soluciones en Domótica y Mantenimiento Eléctrico
 
-Este repositorio contiene el código fuente del proyecto **InnovaGrid**, un sitio web tipo *Landing Page* multipantalla desarrollado como evaluación práctica para la asignatura de **Técnicas Avanzadas de Diseño Web** (Segundo Año de Ingeniería de Sistemas, UBA).
+Este repositorio contiene el código fuente del proyecto **Angelotti_Service**, un sitio web tipo *Landing Page* multipantalla desarrollado como evaluación práctica para la asignatura de **Técnicas Avanzadas de Diseño Web** (Segundo Año de Ingeniería de Sistemas, UBA).
 
 El objetivo principal de este proyecto es demostrar el dominio de la **estructura semántica de HTML5** y la implementación de diseño responsivo (RWD) utilizando el framework **Bootstrap 5**, cumpliendo con los estándares actuales de desarrollo Frontend.
 
