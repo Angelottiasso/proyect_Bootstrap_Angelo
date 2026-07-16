@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Angelotti_Service</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* ASIGNACIÓN: Efectos CSS integrados */
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+        .titulo-animado { transition: all 0.4s ease-in-out; display: inline-block; }
+        .titulo-animado:hover { transform: scale(1.05); color: #003366 !important; }
+        /* Las clases de marco están listas en caso de agregar imágenes futuras */
+        .efecto-marco { transition: all 0.4s ease-in-out; border: 4px solid transparent; }
+        .efecto-marco:hover { transform: scale(1.03); border: 4px solid #0d6efd; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+    </style>
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand text-primary fw-bold" href="index.html">Angelotti_Service</a>
+            <a class="navbar-brand text-primary fw-bold" href="index.html#inicio">Angelotti_Service</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#informacion">Información</a></li>
                     <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="faq.html">Preguntas</a></li>
@@ -28,7 +38,8 @@
 
     <header class="bg-white py-5 text-center border-bottom shadow-sm">
         <div class="container">
-            <h1 class="fw-bold text-primary">Catálogo de Servicios</h1>
+            <!-- ASIGNACIÓN: Título animado -->
+            <h1 class="fw-bold text-primary titulo-animado">Catálogo de Servicios</h1>
             <p class="lead text-muted">Soluciones integrales en ingeniería eléctrica y automatización de espacios.</p>
         </div>
     </header>
@@ -39,7 +50,8 @@
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
-                        <h4 class="card-title text-primary fw-bold mb-3">Diagnóstico Eléctrico</h4>
+                        <!-- ASIGNACIÓN: Título animado -->
+                        <h4 class="card-title text-primary fw-bold mb-3 titulo-animado">Diagnóstico Eléctrico</h4>
                         <p class="card-text text-muted">Análisis exhaustivo de circuitos residenciales e industriales para detectar caídas de tensión y pérdidas de energía no justificadas.</p>
                         
                         <ul class="list-group list-group-flush mt-4">
@@ -54,7 +66,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
-                        <h4 class="card-title text-primary fw-bold mb-3">Mantenimiento de Tableros</h4>
+                        <h4 class="card-title text-primary fw-bold mb-3 titulo-animado">Mantenimiento de Tableros</h4>
                         <p class="card-text text-muted">Configuración, instalación y saneamiento de paneles de distribución eléctrica, garantizando el cumplimiento de las normativas de seguridad.</p>
                         
                         <ul class="list-group list-group-flush mt-4">
@@ -69,7 +81,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
-                        <h4 class="card-title text-primary fw-bold mb-3">Integración IoT y Domótica</h4>
+                        <h4 class="card-title text-primary fw-bold mb-3 titulo-animado">Integración IoT y Domótica</h4>
                         <p class="card-text text-muted">Diseño de sistemas embebidos para el control automatizado de iluminación, motores y climatización a través de interfaces web.</p>
                         
                         <ul class="list-group list-group-flush mt-4">

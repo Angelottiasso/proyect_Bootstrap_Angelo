@@ -6,35 +6,67 @@
     <title>Angelotti_Service | Domótica y Electricidad </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Solo necesitamos un poquito de CSS personalizado para que las imágenes del carrusel no sean gigantes */
+        /* ASIGNACIÓN: SmoothScrolling con CSS */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px; /* Compensa la altura del menú anclado */
+        }
+        
+        /* para el carrusel  */
         .carousel-item img {
             height: 60vh;
             object-fit: cover;
             opacity: 0.7;
         }
         .carousel { background-color: #000; }
+
+        /* ASIGNACIÓN: Títulos cambian de color y amplían su tamaño de forma fluida */
+        .titulo-animado {
+            transition: all 0.4s ease-in-out;
+            display: inline-block;
+        }
+        .titulo-animado:hover {
+            transform: scale(1.05); /* Amplía tamaño */
+            color: #003366 !important; /* Cambia a azul armónico */
+        }
+
+        /* ASIGNACIÓN: Transición y efecto marco a imágenes y cajas */
+        .efecto-marco {
+            transition: all 0.4s ease-in-out;
+            border: 4px solid transparent; /* Marco invisible inicial */
+        }
+        .efecto-marco:hover {
+            transform: scale(1.03); /* Transición fluida */
+            border: 4px solid #0d6efd; /* Efecto marco */
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
     </style>
 </head>
-<body>
+<body id="inicio">
 
+    <!-- ASIGNACIÓN: Menú anclado (sticky-top) y enlaces a todas las secciones -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand text-primary fw-bold" href="#">Angelotti_Service</a>
+            <a class="navbar-brand text-primary fw-bold" href="index.html#inicio">Angelotti_Service</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <!-- Enlaces conectados con las secciones del sitio -->
+                    <li class="nav-item"><a class="nav-link active" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#informacion">Información</a></li>
                     <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="faq.html">Preguntas</a></li>
-                    <li class="nav-item"><a class="btn btn-primary ms-3" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-3" href="index.html#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Carrusel: EXCLUIDO de los efectos marco como se solicitó -->
     <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="4000">
@@ -64,42 +96,45 @@
         </button>
     </div>
 
-    <main class="container my-5">
+    <!-- ASIGNACIÓN: ID para navegación suave -->
+    <main id="informacion" class="container my-5">
         
         <section class="row align-items-center mb-5">
             <div class="col-md-6">
-                <h2 class="text-primary">El futuro de las redes eléctricas</h2>
+                <!-- ASIGNACIÓN: Clase titulo-animado agregada -->
+                <h2 class="text-primary titulo-animado">El futuro de las redes eléctricas</h2>
                 <p class="lead">Implementamos soluciones que integran tecnologías de medición inteligente y control remoto, permitiendo identificar fugas de voltaje y optimizar el consumo energético en tiempo real.</p>
             </div>
             <div class="col-md-6">
-                <img src="Imagenes/Imagen_01.avif" class="img-fluid rounded shadow" alt="Redes eléctricas">
+                <!-- ASIGNACIÓN: Clase efecto-marco agregada a la imagen -->
+                <img src="Imagenes/Imagen_01.avif" class="img-fluid rounded shadow efecto-marco" alt="Redes eléctricas">
             </div>
         </section>
 
         <section class="row align-items-center mb-5">
             <div class="col-md-6 order-md-2">
-                <h2 class="text-primary">Automatización con Microcontroladores</h2>
+                <h2 class="text-primary titulo-animado">Automatización con Microcontroladores</h2>
                 <p class="lead">Diseñamos sistemas basados en arquitecturas como Arduino para el control de motores y sensores. Desde mapeo de señales analógicas hasta accionamiento de relés de alta potencia.</p>
             </div>
             <div class="col-md-6 order-md-1">
-                <img src="Imagenes/Imagen_02.avif" class="img-fluid rounded shadow" alt="Arduino">
+                <img src="Imagenes/Imagen_02.avif" class="img-fluid rounded shadow efecto-marco" alt="Arduino">
             </div>
         </section>
 
         <section class="row align-items-center mb-5">
             <div class="col-md-6">
-                <h2 class="text-primary">Mantenimiento Preventivo</h2>
+                <h2 class="text-primary titulo-animado">Mantenimiento Preventivo</h2>
                 <p class="lead">Reemplazo seguro de cableado, breakers y componentes defectuosos. Nuestro enfoque garantiza la máxima seguridad de la red eléctrica, evitando sobrecargas y cortocircuitos.</p>
             </div>
             <div class="col-md-6">
-                <img src="Imagenes/Imagen_03.avif" class="img-fluid rounded shadow" alt="Herramientas">
+                <img src="Imagenes/Imagen_03.avif" class="img-fluid rounded shadow efecto-marco" alt="Herramientas">
             </div>
         </section>
 
         <section class="p-5 bg-light rounded shadow-sm text-center mb-5">
-            <h2 class="text-primary">Tecnología al servicio del usuario</h2>
+            <h2 class="text-primary titulo-animado">Tecnología al servicio del usuario</h2>
             <p class="lead">Monitoreo inteligente 24/7 de tu infraestructura. Visualiza el estado de tus sensores a través de interfaces web dinámicas y seguras.</p>
-            <img src="Imagenes/Imagen_04.avif" class="img-fluid rounded mt-3" alt="Servidor web">
+            <img src="Imagenes/Imagen_04.avif" class="img-fluid rounded mt-3 efecto-marco" alt="Servidor web">
         </section>
 
     </main>
@@ -108,7 +143,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 bg-white p-4 rounded shadow">
-                    <h2 class="text-center text-primary mb-4">Solicita tu Asesoría</h2>
+                    <h2 class="text-center text-primary mb-4 titulo-animado">Solicita tu Asesoría</h2>
                     <form action="#" method="POST">
                         <div class="mb-3">
                             <label for="nombre" class="form-label fw-bold">Nombres y Apellidos</label>
