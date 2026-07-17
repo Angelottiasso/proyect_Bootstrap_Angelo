@@ -1,0 +1,132 @@
+# ⚡ Angelotti_Service - Soluciones en Domótica y Mantenimiento Eléctrico
+
+Este repositorio contiene el código fuente del proyecto **Angelotti_Service**, un sitio web tipo "Landing Page" multipantalla desarrollado como evaluación práctica para la asignatura de **Técnicas Avanzadas de Diseño Web** (Segundo Año de Ingeniería de Sistemas, UBA).
+
+El objetivo principal de este proyecto es demostrar el dominio de la **estructura semántica de HTML5** y la implementación de diseño responsivo (RWD) utilizando el framework **Bootstrap 5**, cumpliendo con los estándares actuales de desarrollo Frontend.
+
+## ¿De qué se trata este sitio web?
+Este proyecto es una landing page multipágina llamada "Angelotti_Service" diseñada para presentar servicios de domótica, mantenimiento eléctrico e instalaciones tecnológicas. Su objetivo es mostrar la oferta de servicios, proyectos realizados y facilitar el contacto con clientes potenciales mediante una interfaz sencilla, responsiva y accesible.
+
+La web está pensada como material de presentación profesional y evaluación académica, combinando una estructura semántica clara, componentes interactivos y un diseño adaptable a móviles y escritorio.
+
+---
+
+## Tecnologías utilizadas y cómo se realizó
+Tecnologías principales:
+
+- HTML5: Estructura semántica del contenido usando etiquetas como `<header>`, `<nav>`, `<main>`, `<section>` y `<footer>` para mejorar accesibilidad y SEO.
+
+- CSS (Bootstrap 5): Se utilizó Bootstrap 5 como framework principal para la maquetación (Grid System), componentes y utilidades. Esto redujo la necesidad de estilos personalizados y aceleró el desarrollo responsive.
+
+- JavaScript (Bootstrap Bundle): Para la interactividad provista por componentes de Bootstrap (carrusel, acordeón, menú móvil). No se requiere un backend ni librerías adicionales.
+
+- Recursos estáticos: Imágenes (carpeta Imagenes), estilos personalizados mínimos (carpeta CSS) y scripts (carpeta JS).
+
+Cómo se realizó (resumen del proceso):
+
+1. Diseño y maquetación: Se definió la jerarquía de contenido y se creó el HTML con marcado semántico para cada sección. El Grid de Bootstrap organizó el contenido en columnas responsivas (12 columnas).
+
+2. Componentes interactivos: Se incorporaron componentes de Bootstrap (Carousel para sliders, Accordion para FAQ, Cards para servicios y proyectos) aprovechando el bundle JS de Bootstrap para el comportamiento.
+
+3. Optimización responsive: Uso de clases utilitarias de Bootstrap (`.container`, `.row`, `.col-*`, `.img-fluid`, etc.) y pruebas en distintos tamaños de pantalla.
+
+4. Formularios y validación: El formulario de contacto utiliza validación HTML5 básica (`required`, `type="email"`) para asegurar inputs mínimos antes de su envío (si se integra envío por correo o servicio, se requiere backend adicional).
+
+5. Organización de archivos: Separación clara en carpetas (CSS, JS, Imagenes) para facilitar mantenimiento.
+
+---
+
+## Estructura del sitio y funcionalidades implementadas
+El proyecto está organizado en páginas estáticas principales y carpetas de recursos.
+
+Estructura principal (archivos clave):
+
+- index.html — Página de inicio / Landing Page
+- servicios.html — Catálogo de servicios ofrecidos
+- Servicios destacados: Diagnóstico, Tableros, IoT (ejemplos de categorías presentadas mediante Cards y List Groups)
+- proyectos.html — Portafolio / Proyectos realizados
+- faq.html — Preguntas frecuentes (FAQ)
+- CSS/ — Carpeta con hojas de estilo adicionales (si aplica)
+- JS/ — Carpeta con scripts personalizados (si aplica)
+- Imagenes/ — Imágenes y recursos multimedia
+
+Funcionalidades por sección:
+
+- index.html
+  - Navbar fijo (sticky) para navegación global.
+  - Carrusel (Bootstrap Carousel) para destacar servicios o promociones.
+  - Secciones informativas en grid con imágenes responsivas.
+  - Formulario de contacto con validación HTML básica.
+
+- servicios.html
+  - Listado de servicios usando Cards y List Groups para presentar características y beneficios.
+  - Estructura modular que permite agregar o quitar servicios fácilmente.
+
+- proyectos.html
+  - Rejilla de tarjetas (Card Grid) que presenta casos de estudio o trabajos previos.
+  - Badges o etiquetas para categorizar proyectos y filtrar visualmente la experiencia.
+
+- faq.html
+  - Acordeón (Accordion) para organizar preguntas y respuestas, manteniendo la página compacta y navegable.
+
+---
+
+## Hosting
+El sitio fue desplegado utilizando el servicio de hosting gratuito InfinityFree.
+
+- Hosting: InfinityFree
+- Enlace al sitio publicado: https://angelottiservice.site.je
+
+(Dejar el espacio anterior para que puedas pegar el enlace directo a la página publicada en InfinityFree.)
+
+---
+
+## Entorno de desarrollo
+El proyecto fue desarrollado como una aplicación web estática; el entorno típico recomendado para trabajar con este repositorio incluye:
+
+- Sistema operativo: Windows (o cualquier OS compatible con las herramientas listadas).
+- Editor de código: Visual Studio Code (recomendado).
+- Extensiones útiles: Live Server (para previsualizar cambios en tiempo real), Prettier (formateo opcional).
+- Navegadores para pruebas: Google Chrome, Mozilla Firefox (usar las herramientas de desarrollador para pruebas responsive).
+- Node.js: No es obligatorio para ejecutar la web, pero puede ser útil si se agregan herramientas de build o paquetes en el futuro.
+
+Cómo abrir el proyecto localmente:
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/Angelottiasso/proyect_Bootstrap_Angelo.git
+   ```
+2. Abrir la carpeta del proyecto en Visual Studio Code.
+3. Usar la extensión Live Server o abrir `index.html` directamente en el navegador.
+
+---
+
+## Control de versiones
+Se empleó Git como sistema de control de versiones y GitHub como repositorio remoto para hospedaje del código fuente.
+
+- Repositorio remoto: https://github.com/Angelottiasso/proyect_Bootstrap_Angelo
+- Flujo de trabajo recomendado para contribuir:
+  1. Forkear el repositorio (si no perteneces al repositorio original).
+  2. Crear una rama para la tarea/feature: `git checkout -b feature/nombre-de-la-tarea`.
+  3. Realizar commits claros y atomizados.
+  4. Hacer push a tu fork/branch y abrir un Pull Request hacia la rama `main` del repositorio original.
+
+Buenas prácticas:
+- Mantener la rama `main` estable.
+- Escribir mensajes de commit descriptivos (qué y por qué).
+
+---
+
+## Contribuciones
+Si deseas contribuir:
+
+1. Abrir un issue detallando la propuesta o bug.
+2. Crear una rama con un nombre descriptivo.
+3. Enviar un Pull Request describiendo los cambios y su finalidad.
+
+## Autor
+*   **Angelo Andres Diaz Assolutissiamente**
+*   Estudiante de Ingeniería de Sistemas | Universidad Bicentenaria de Aragua.
+*   **C.I:** 29948453
+
+*Proyecto desarrollado con fines académicos bajo el enfoque de optimización y automatización de procesos energéticos.*
