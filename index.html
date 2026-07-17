@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angelotti_Service | Domótica y Electricidad </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nosotros.css" rel="stylesheet">
+
     <style>
         /* ASIGNACIÓN: SmoothScrolling con CSS */
         html {
@@ -54,9 +56,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <!-- Enlaces conectados con las secciones del sitio -->
                     <li class="nav-item"><a class="nav-link active" href="index.html#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#informacion">Información</a></li>
+                    <!--Enlace integrado al SmoothScrolling mediante el ID nosotros -->
+                    <li class="nav-item"><a class="nav-link" href="index.html#nosotros">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="faq.html">Preguntas</a></li>
@@ -66,7 +69,7 @@
         </div>
     </nav>
 
-    <!-- Carrusel: EXCLUIDO de los efectos marco como se solicitó -->
+    <!-- Carrusel -->
     <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="4000">
@@ -139,6 +142,27 @@
 
     </main>
 
+    <section id="nosotros" class="container my-5 py-5 border-top">
+            <div class="row align-items-center">
+                <!-- Columna de Texto -->
+                <div class="col-md-7 pe-md-5">
+                    <h2 class="text-primary titulo-animado mb-4">¿Quiénes Somos?</h2>
+                    <p class="lead fw-normal">
+                        En <strong>Angelotti_Service</strong> somos una empresa de vanguardia enfocada en la ingeniería aplicada. Transformamos infraestructuras eléctricas convencionales en ecosistemas inteligentes y altamente eficientes.
+                    </p>
+                    <p class="text-muted">
+                        Con un profundo dominio en tecnologías de automatización y mantenimiento preventivo, nuestro objetivo es garantizar la seguridad y optimización del consumo energético en cada uno de tus espacios. La domótica no es el futuro, es nuestra herramienta del presente.
+                    </p>
+                </div>
+                <!-- Columna de Imagen con Animación CSS -->
+                <div class="col-md-5 text-center mt-4 mt-md-0">
+                    <div class="energia-container animacion-energia">
+                        <img src="Imagenes/Imagen_04.avif" alt="Equipo Angelotti" class="img-fluid rounded-circle shadow efecto-marco" style="width: 250px; height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <section id="contacto" class="bg-primary bg-opacity-10 py-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -163,7 +187,7 @@
             </div>
         </div>
     </section>
-
+    
     <footer class="bg-dark text-white text-center py-4 mt-auto">
         <div class="container">
             <p class="mb-1">&copy; 2026 Soluciones Electricas Angelotti_Service</p>
@@ -172,5 +196,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Vinculación del Javascript de la sección "Nosotros" -->
+    <script src="js/nosotros.js"></script>
 </body>
 </html>

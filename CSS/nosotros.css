@@ -1,0 +1,52 @@
+/* 
+ * Archivo: css/nosotros.css
+ * Propósito: Animación CSS3 exclusiva para la nueva sección "Nosotros".
+ * Temática: Pulso de energía/electricidad.
+ */
+
+/* Contenedor relativo para poder aplicar el efecto sobre la imagen */
+.energia-container {
+    display: inline-block;
+    border-radius: 50%; /* Asegura que el contenedor sea circular */
+    padding: 5px;
+}
+
+/* Animación CSS3: Genera un resplandor azul que se expande y desvanece */
+@keyframes pulsoElectrico {
+    0% {
+        box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.8); /* Azul primario de Bootstrap */
+    }
+    70% {
+        box-shadow: 0 0 0 25px rgba(13, 110, 253, 0); /* Se expande 25px y se vuelve transparente */
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(13, 110, 253, 0);
+    }
+}
+
+/* Clase que ejecuta la animación de forma infinita */
+.animacion-energia {
+    animation: pulsoElectrico 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+/* Animación secundaria: Entrada fluida de la sección al hacer scroll */
+@keyframes entradaFluida {
+    from { 
+        opacity: 0; 
+        transform: translateY(40px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Clase que será agregada por JavaScript cuando la sección sea visible */
+.seccion-visible {
+    animation: entradaFluida 1.2s ease-out forwards;
+}
+
+/* Ocultamos la sección inicialmente para que el JS active la animación de entrada */
+#nosotros {
+    opacity: 0; 
+}
